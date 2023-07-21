@@ -1,0 +1,117 @@
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+body {
+  background-color: #001c30;
+}
+
+img {
+  width: 30%;
+
+}
+
+input {
+  text-align: center;
+}
+
+
+
+
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+
+
+.buttons {
+  background-color: #176b87;
+  border-radius: 10px;
+  font-size: 130%;
+  margin-top: 1%;
+  width: 20%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.card {
+  background-color: inherit;
+  border: none;
+}
+
+.formstyles {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 120%;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.homeButton {
+  background-color: #001c30;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  background-color: #001c30;
+  border: none;
+  display: flex;
+  justify-content: center;
+
+}
+
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */

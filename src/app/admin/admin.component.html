@@ -1,0 +1,134 @@
+<body>
+  <div class="image">
+    <button id="logOut" (click)="logOut()">Log Out</button>
+    <button class="homeButton">
+      <img
+        src="../assets/Partner Logos/CyberHack-Logo-modified.png"
+        alt="Cyberhack Logo"
+      />
+    </button>
+  </div>
+
+  <div class="crud-container">
+    <button (click)="createUser()" class="crud" id="create">Create User</button>
+    <button class="crud" id="change-admin-pass" (click)="changePassword()">
+      Change Admin Password
+    </button>
+    <button class="crud" id="change-user-pass" (click)="goResetPass()">
+      Change User Password
+    </button>
+  </div>
+  <div>
+    <u
+      ><h2>
+        Deleting Users is permanent and effective immediately. Be sure you're
+        deleteing the correct user
+      </h2></u
+    >
+  </div>
+  <div style="background-color: #001c30">
+    <u><h2>Admins</h2></u>
+    <table>
+      <thead>
+        <tr>
+          <th><u>User Name</u></th>
+          <th><u>First Name</u></th>
+          <th><u>User Role</u></th>
+          <th><u>Email</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of admins">
+          <td>{{ user.userName }}</td>
+          <td>{{ user.userFirstName }}</td>
+          <td>{{ user.userRole }}</td>
+          <td>{{ user.userEmail }}</td>
+          <td>
+            <div class="crud-container">
+              <button class="u-btns" (click)="editUser(user.userName)">
+                Edit
+              </button>
+              <button class="d-btns" (click)="deleteUser(user.userName)">
+                Delete
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background-color: #001c30">
+    <u><h2>Volunteers</h2></u>
+    <table>
+      <thead>
+        <tr>
+          <th><u>User Name</u></th>
+          <th><u>First Name</u></th>
+          <th><u>Last Name</u></th>
+          <th><u>User Role</u></th>
+          <th><u>Email</u></th>
+          <th><u>Phone</u></th>
+          <th><u>Interests</u></th>
+          <th><u>LinkedIn</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of vols">
+          <td>{{ user.userName }}</td>
+          <td>{{ user.userFirstName }}</td>
+          <td>{{ user.userLastName }}</td>
+          <td>{{ user.userRole }}</td>
+          <td>{{ user.userEmail }}</td>
+          <td>{{ user.userPhone }}</td>
+          <td>{{ user.volInterests }}</td>
+          <td>{{ user.linkedIn }}</td>
+          <td>
+            <button class="u-btns" (click)="editUser(user.userName)">
+              Edit
+            </button>
+            <button class="d-btns" (click)="deleteUser(user.userName)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background-color: #001c30">
+    <u><h2>NGOs</h2></u>
+    <table>
+      <thead>
+        <tr>
+          <th><u>User Name</u></th>
+          <th><u>Official Name</u></th>
+          <th><u>User Role</u></th>
+          <th><u>Email</u></th>
+          <th><u>Phone</u></th>
+          <th><u>Needs</u></th>
+          <th><u>NGO Website</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of ngos">
+          <td>{{ user.userName }}</td>
+          <td>{{ user.userFirstName }}</td>
+          <td>{{ user.userRole }}</td>
+          <td>{{ user.userEmail }}</td>
+          <td>{{ user.userPhone }}</td>
+          <td>{{ user.ngoNeeds }}</td>
+          <td>{{ user.linkedIn }}</td>
+          <td>
+            <button class="u-btns" (click)="editUser(user.userName)">
+              Edit
+            </button>
+            <button class="d-btns" (click)="deleteUser(user.userName)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>

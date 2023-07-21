@@ -1,0 +1,117 @@
+<body>
+  <div class="image" mat-icon-button matTooltip="Home">
+    <button (click)="goHome()" class="image">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+  </div>
+
+  <div *ngIf="userRole === 'ngo'">
+    <h1>Update NGO Profile</h1>
+    <form>
+      <div>
+        <label for="userFirstName">Official Name:</label>
+        <input type="text" id="userFirstName" [formControl]="userFirstNameControl">
+      </div>
+      <div>
+        <label for="userEmail">Email for Orgs POC:</label>
+        <input type="email" id="userEmail" [formControl]="userEmailControl">
+      </div>
+      <div>
+        <label for="userPhone">Organisation's Phone Number:</label>
+        <input type="tel" id="userPhone" [formControl]="userPhoneControl">
+      </div>
+      <div>
+        <label for="ngoNeeds">Organisation's Needs:</label>
+        <input type="text" id="ngoNeeds" [formControl]="ngoNeedsControl">
+      </div>
+      <div>
+        <label for="linkedIn">Organisation's URL:</label>
+        <input type="text" id="linkedIn" [formControl]="linkedInControl">
+      </div>
+      <div class="button-container">
+        <button (click)="onUpdate()" class="buttons" type="submit">Save Changes</button>
+        <button (click)="deleteUser()" class="buttons" type="submit">Delete Account</button>
+      </div>
+      <div>
+        <h5 id="warning">Deleting your Account is immediate and final. You will have to re-register if you change your
+          mind.</h5>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="userRole === 'volunteer'">
+    <h1>Update Volunteer Profile</h1>
+    <form>
+      <div>
+        <label for="userFirstName">First Name:</label>
+        <input type="text" id="userFirstName" [formControl]="userFirstNameControl">
+      </div>
+      <div>
+        <label for="userLastName">Last Name:</label>
+        <input type="text" id="userLastName" [formControl]="userLastNameControl">
+      </div>
+      <div>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" [formControl]="userEmailControl">
+      </div>
+      <div>
+        <label for="userPhone">Phone:</label>
+        <input type="tel" id="userPhone" [formControl]="userPhoneControl">
+      </div>
+      <div>
+        <label for="volInterests">Volunteer Interests:</label>
+        <input type="text" id="volInterests" [formControl]="volInterestsControl">
+      </div>
+      <div>
+        <label for="crimCheck">Valid Criminal Reference Check:</label>
+        <select [formControl]="crimCheckControl" id="crimCheck">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="avNow">Are you Available?</label>
+        <select [formControl]="avNowControl" id="avNow">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="linkedIn">LinkedIn Profile:</label>
+        <input type="text" id="linkedIn" [formControl]="linkedInControl">
+      </div>
+      <div class="button-container">
+        <button (click)="onUpdate()" class="buttons" type="submit">Save Changes</button>
+        <button (click)="deleteUser()" class="buttons" type="submit">Delete Account</button>
+      </div>
+      <div>
+        <h5 id="warning">Deleting your Account is immediate and final. You will have to re-register if you change your
+          mind.</h5>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="userRole === 'Admin'">
+    <h1>Admin - Update {{ userName }} Profile</h1>
+    <form>
+      <div>
+        <label for="userFirstName">First Name / Official Name:</label>
+        <input type="text" id="userFirstName" [formControl]="userFirstNameControl">
+      </div>
+      <div *ngIf="userLastNameControl.value !== null && userLastNameControl.value !== undefined && userLastNameControl.value !== ''">
+        <label for="userLastName">Last Name:</label>
+        <input type="text" id="userLastName" [formControl]="userLastNameControl">
+      </div>
+      <div>
+        <label for="userPhone">Phone:</label>
+        <input type="tel" id="userPhone" [formControl]="userPhoneControl">
+      </div>
+      <div>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" [formControl]="userEmailControl">
+      </div>
+      <div class="button-container">
+        <button (click)="onUpdate()" class="buttons" type="submit">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,39 @@
+<body>
+  <div class="image" mat-icon-button matTooltip="Home">
+    <button (click)="goHome()" class="homeButton">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+  </div>
+
+  <form>
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">User Name</mat-label>
+      <input matInput [formControl]="userNameControl" placeholder="Username">
+    </mat-form-field>
+    <br>
+
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Email</mat-label>
+      <input matInput [formControl]="userEmailControl" placeholder="Email">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Password</mat-label>
+      <input matInput [formControl]="userPasswordControl" placeholder="Password" type="password">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">User Role</mat-label>
+      <input matInput [formControl]="userRoleControl" placeholder="volunteer, ngo or Admin">
+    </mat-form-field>
+
+    <br>
+
+    <button class="btn" (click)="onSubmit()">Register</button>
+  </form>
+</body>

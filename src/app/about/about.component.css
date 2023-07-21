@@ -1,0 +1,116 @@
+/*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*//*GLOBAL*/  
+
+body {
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 125%;
+}
+
+img {
+  width: 3%;
+  border-radius: 100px;
+}
+
+p {
+  font-size: 125%;
+}
+/* CLASSES */
+/* CLASSES */
+
+/* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES *//* CLASSES */
+
+.about {
+  background-color: #001c30;
+  padding-bottom: 3%;
+  position: relative;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding-bottom: 5%;
+}
+.general-info {
+  background-color: #001c30;
+  padding-bottom: 3%;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  font-size: 250%;
+  padding-top: 3%;
+}
+
+.image {
+  align-items: center;
+  margin: auto;
+  padding-top: 1%;
+  width: 30%;
+}
+
+.reg-btn {
+  background-color: #001c30;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 2% 0;
+  font-size: 150%;
+  width: 25%;
+}
+
+.vision {
+  background-color: #176b87;
+  padding-bottom: 3%;
+  position: relative;
+}
+
+/*IDS */
+
+/*IDS */
+/*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS *//*IDS */
+#about-content {
+  padding: 5% 1% 5% 35%;
+}
+
+#about-image {
+  border-radius: 100px;
+  width: 25%;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  margin-right: 30%;
+}
+
+#general-content {
+  padding: 5% 1% 5% 35%;
+}
+
+#general-image {
+  border-radius: 100px;
+  width: 25%;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  margin-right: 30%;
+}
+#vision-content {
+  padding: 5% 35% 5% 1%;
+}
+
+#vision-image {
+  border-radius: 100px;
+  width: 25%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  margin-left: 30%;
+}

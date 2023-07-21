@@ -1,0 +1,129 @@
+<div class="vol-form">
+  <h1 style="text-align: center;">Join Us as a Volunteer Today!</h1>
+  <form>
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Username</mat-label>
+      <input matInput [formControl]="userNameControl" placeholder="Username">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">First Name</mat-label>
+      <input matInput [formControl]="userFirstNameControl" placeholder="First Name">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Last Name</mat-label>
+      <input matInput [formControl]="userLastNameControl" placeholder="Last Name">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Email</mat-label>
+      <input matInput [formControl]="userEmailControl" placeholder="Email">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Password</mat-label>
+      <input matInput [formControl]="userPasswordControl" placeholder="Password"
+        [type]="showPassword ? 'text' : 'password'" (input)="checkPasswordStrength()">
+    </mat-form-field>
+    <div *ngIf="passwordStrength === 'Weak'">
+      <p>Password Strength: Weak</p>
+    </div>
+    <div *ngIf="passwordStrength === 'Medium'">
+      <p>Password Strength: Medium</p>
+    </div>
+    <div *ngIf="passwordStrength === 'Strong'">
+      <p>Password Strength: Strong</p>
+    </div>
+    <br>
+    <mat-checkbox [checked]="showPassword" (change)="togglePasswordVisibility()">Show Password</mat-checkbox>
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Phone number w/ country and area code</mat-label>
+      <input matInput [formControl]="userPhoneControl" placeholder="Phone number">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Current Position and Experience</mat-label>
+      <textarea matInput [formControl]="currentPositionControl" placeholder="Position and Experience"></textarea>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles">
+      <h4 class="formstyles">Years of experience</h4>
+      <mat-select [formControl]="yearsOfExperienceControl">
+        <mat-option class="formstyles" value="0-4">0 - 4</mat-option>
+        <mat-option class="formstyles" value="5-10">5 - 10</mat-option>
+        <mat-option class="formstyles" value="11-15">11 - 15</mat-option>
+        <mat-option class="formstyles" value="15+">15 +</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles">
+      <h4 class="formstyles">Highest level of Education</h4>
+      <mat-select [formControl]="eduLvlControl">
+        <mat-option class="formstyles" value="High School">High School</mat-option>
+        <mat-option class="formstyles" value="Certificate">Certificate</mat-option>
+        <mat-option class="formstyles" value="College or Trade Diploma">College or Trade Diploma</mat-option>
+        <mat-option class="formstyles" value="University Degree">University Degree</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Areas of Interest</mat-label>
+      <textarea matInput [formControl]="volInterestsControl" placeholder="Areas of Interest"></textarea>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">How many hours a week can you Volunteer?</mat-label>
+      <input matInput [formControl]="wklyHrsControl" placeholder="Hours per week">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles">
+      <h4 class="formstyles">Do you have a Criminal Reference Check?</h4>
+      <mat-select [formControl]="crimCheckControl">
+        <mat-option class="formstyles" value="Yes">Yes</mat-option>
+        <mat-option class="formstyles" value="No">No</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <h4 class="formstyles">Please provide 3 References</h4>
+      <textarea matInput [formControl]="referencesControl" placeholder="Name, number, and email"></textarea>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <h4 class="formstyles">Please provide URL to LinkedIn Profile</h4>
+      <input matInput [formControl]="linkedInControl" placeholder="/">
+      <mat-hint>Please do not include "https://linkedin.com/in/"</mat-hint>
+    </mat-form-field>
+
+    <br>
+
+    <button class="btn" (click)="onSubmit()">Register</button>
+  </form>
+</div>

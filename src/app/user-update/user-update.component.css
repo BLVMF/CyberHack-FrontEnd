@@ -1,0 +1,95 @@
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+
+body {
+  background-color: #001c30;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin-top: -4%;
+  z-index: 1;
+
+}
+
+img {
+  text-align: center;
+  width: 35%;
+}
+
+label {
+  padding: 1%;
+  width: 10%;
+  margin-left: 25%;
+}
+
+input {
+  border-radius: 10px;
+  ;
+  margin-bottom: .5%;
+  padding: 1%;
+  width: 35%;
+}
+
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+
+.buttons {
+  border-radius: 10px;
+  background-color: #176B87;
+  font-size: 120%;
+  padding: 1%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.image {
+  background-color: #001c30;
+  border: none;
+  text-align: center;
+}
+
+/*ID*/
+
+#warning {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 120%;
+  padding-top: 1%;
+  text-align: center;
+}

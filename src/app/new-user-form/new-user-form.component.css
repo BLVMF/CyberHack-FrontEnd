@@ -1,0 +1,105 @@
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+body {
+  background-color: #001c30;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #001c30;
+}
+
+img {
+  width: 30%;
+}
+
+
+
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+
+.btn {
+  background-color: #176b87;
+  border-radius: 10px;
+  font-size: 200%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 2%;
+  width: 20%;
+}
+
+.formstyles {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 125%;
+  width: 90%;
+}
+
+.homeButton {
+  background-color: #001c30;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  background-color: #001c30;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */

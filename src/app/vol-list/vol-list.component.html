@@ -1,0 +1,70 @@
+<body>
+  <div class="image" mat-icon-button matTooltip="Home">
+    <button (click)="goHome()" class="homeButton">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+  </div>
+ 
+
+
+  <div class="grid-container">
+    <div *ngFor="let vol of vols" class="card">
+      <div class="info">
+
+        <u>
+          <h3>Volunteer UserName</h3>
+        </u>
+        <p>{{vol.userName}}</p>
+        <u>
+          <h3>Name</h3>
+        </u>
+        <p>{{vol.userFirstName}}, {{vol.userLastName}}</p>
+        <u>
+          <h3>Volunteer Email</h3>
+        </u>
+        <p>{{vol.userEmail}}</p>
+        <u>
+          <h3>Phone Number</h3>
+        </u>
+        <p>{{vol.userPhone}}</p>
+        <u>
+          <h3>Current Position</h3>
+        </u>
+        <p>{{vol.currentPosition}}</p>
+        <u>
+          <h3>Years of Experience</h3>
+        </u>
+        <p>{{vol.yearsOfExperience}}</p>
+        <u>
+          <h3>Level of Education</h3>
+        </u>
+        <p>{{vol.eduLvl}}</p>
+        <u>
+          <h3>Areas of Interest</h3>
+        </u>
+        <p>{{vol.volInterests}}</p>
+        <u>
+          <h3>Availability (# of hrs/wk)</h3>
+        </u>
+        <p>{{vol.wklyHrs}}</p>
+        <u>
+          <h3>Valid Criminal Referce Check</h3>
+        </u>
+        <p>{{vol.crimCheck}}</p>
+        <u>
+          <h3>Work References</h3>
+        </u>
+        <p>{{vol.workRefs}}</p>
+        <u>
+          <h3>LinkedIn URL</h3>
+        </u>
+        <p>{{vol.linkedIn}}</p>
+        <u>
+          <h3>Available Now?</h3>
+        </u>
+        <p>{{vol.avNow}}</p>
+        <button class="contact" (click)="contactVol(vol)">Contact</button>
+      </div>
+    </div>
+  </div>
+</body>

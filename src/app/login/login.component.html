@@ -1,0 +1,36 @@
+<body>
+  <div class="image" mat-icon-button matTooltip="Home">
+    <button (click)="goHome()" class="homeButton">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+  </div>
+  <br>
+
+  <div class="card" style="padding:20px;">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="formstyles">
+      <mat-form-field class="formstyles" appearance="outline">
+        <input type="text" matInput ngModel name="userName" id="userName" placeholder="Cyberhack Username">
+      </mat-form-field>
+
+      <br>
+
+      <mat-form-field class="formstyles" appearance="outline">
+        <input type="password" matInput ngModel name="userPassword" id="userPassword" placeholder="Enter your password"
+          [type]="showPassword ? 'text' : 'password'">
+      </mat-form-field>
+      <br>
+      <mat-checkbox [checked]="showPassword" (change)="togglePasswordVisibility()">Show Password</mat-checkbox>
+
+
+      <br>
+
+      <div class="button-container">
+        <button type="button" class="buttons" (click)="login(loginForm)">Log In</button>
+        <button type="button" class="buttons" (click)="forgotPassword()"> Forgot Password</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>

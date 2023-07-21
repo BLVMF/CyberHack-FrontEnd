@@ -1,0 +1,42 @@
+<body>
+  <div>
+    <button id="logOut" (click)="logOut()">Log Out</button>
+    <button class="image">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+    <h1>Welcome, {{userName}}</h1>
+    <button id="vol-list" (click)="volList()">Registered Volunteers</button>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <th>Official Name</th>
+        <td>{{userFirstName}}</td>
+      </tr>
+      <tr>
+        <th>Email for Orgs POC</th>
+        <td>{{userEmail}}</td>
+      </tr>
+      <tr>
+        <th>Organisation's Phone Number</th>
+        <td>{{userPhone}}</td>
+      </tr>
+      <tr>
+        <th>Organisation's Needs</th>
+        <td>{{ngoNeeds}}</td>
+      </tr>
+      <tr>
+        <th>Orgnsation's Mission Statement</th>
+        <td>{{workRefs}}</td>
+      </tr>
+      <tr>
+        <th>Organisation's URL</th>
+        <td>{{linkedIn}}</td>
+      </tr>
+    </table>
+    <div>
+      <button class="eds-btns" (click)="updateProfile()">Edit NGO Profile</button>
+      <button class="eds-btns" (click)="changePassword()">Change Password</button>
+    </div>
+  </div>
+</body>

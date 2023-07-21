@@ -1,0 +1,77 @@
+<div>
+  <h1 style="text-align: center">
+    Sign-Up to be connected with a CyberSecurity Specialist Today!
+  </h1>
+  <form>
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">User Name</mat-label>
+      <input matInput [formControl]="userNameControl" placeholder="Username" />
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Official Name</mat-label>
+      <input matInput [formControl]="userFirstNameControl" placeholder="Organisation Name" />
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Email of NGO POC</mat-label>
+      <input matInput [formControl]="userEmailControl" placeholder="Email" />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Password</mat-label>
+      <input matInput [formControl]="userPasswordControl" placeholder="Password" type="password"
+        (input)="checkPasswordStrength()" [type]="showPassword ? 'text' : 'password'" />
+    </mat-form-field>
+    <div *ngIf="passwordStrength === 'Weak'">
+      <p>Password Strength: Weak</p>
+    </div>
+    <div *ngIf="passwordStrength === 'Medium'">
+      <p>Password Strength: Medium</p>
+    </div>
+    <div *ngIf="passwordStrength === 'Strong'">
+      <p>Password Strength: Strong</p>
+    </div>
+    <br />
+    <mat-checkbox [checked]="showPassword" (change)="togglePasswordVisibility()">Show Password</mat-checkbox>
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Phone number w/ country and area code</mat-label>
+      <input matInput [formControl]="userPhoneControl" placeholder="Phone number" />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <mat-label class="formstyles">Organisational Needs</mat-label>
+      <textarea matInput [formControl]="ngoNeedsControl"
+        placeholder="What do you need help in accomplishing?"></textarea>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <h4 class="formstyles">
+        What is the mission statement of your organization?
+      </h4>
+      <textarea matInput [formControl]="workRefsControl"></textarea>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="formstyles" appearance="outline">
+      <h4>Organisation's Website</h4>
+      <input matInput [formControl]="linkedInControl" placeholder="Org URL" />
+      <mat-hint>Please do not include "https://"</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <button class="btn" (click)="onSubmit()">Register</button>
+  </form>
+</div>

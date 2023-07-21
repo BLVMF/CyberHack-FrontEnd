@@ -1,0 +1,93 @@
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+/*GLOBAL*/
+
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+/* CLASSES */
+.buttons {
+  background-color: #001C30;
+  border-radius: 10px;
+  font-size: 150%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  position: relative;
+  top: 30%;
+  left: -12%;
+}
+
+.home-page {
+  background-image: url('/assets/cyberhack-background.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.welcome {
+  background-color: rgba(0, 28, 48, 1);
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 300%;
+  padding: 0.6%;
+  width: fit-content;
+  position: relative;
+  top: 17%;
+  left: 5%;
+}
+
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */
+/*IDS */

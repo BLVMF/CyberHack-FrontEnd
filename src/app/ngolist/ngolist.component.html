@@ -1,0 +1,44 @@
+<body>
+  <div class="image" mat-icon-button matTooltip="Home">
+    <button (click)="goHome()" class="homeButton">
+      <img src="../assets/Partner Logos/CyberHack-Logo-modified.png" alt="Cyberhack Logo">
+    </button>
+  </div>
+
+  <div class="grid-container">
+    <div *ngFor="let ngo of ngos" class="card">
+      <div class="info">
+
+        <u>
+          <h3>Organisation UserName</h3>
+        </u>
+        <p>{{ngo.userName}}</p>
+        <u>
+          <h3>Official Name</h3>
+        </u>
+        <p>{{ngo.userFirstName}}</p>
+        <u>
+          <h3>Email of Org POC</h3>
+        </u>
+        <p>{{ngo.userEmail}}</p>
+        <u>
+          <h3>Phone Number</h3>
+        </u>
+        <p>{{ngo.userPhone}}</p>
+        <u>
+          <h3>Organisational Needs</h3>
+        </u>
+        <p>{{ngo.ngoNeeds}}</p>
+        <u>
+          <h3>Mission Statement</h3>
+        </u>
+        <p>{{ngo.workRefs}}</p>
+        <u>
+          <h3>Website</h3>
+        </u>
+        <p>{{ngo.linkedIn}}</p>
+        <button class="contact" (click)="contactNGO(ngo)">Contact</button>
+      </div>
+    </div>
+  </div>
+</body>
